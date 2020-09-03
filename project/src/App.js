@@ -5,10 +5,7 @@ import Header from "./Components/Header";
 
 function App() {
   return (
-    <div
-      style={{ backgroundColor: "teal" }}
-      className="min-vh-100 position-relative"
-    >
+    <div style={{ backgroundColor: "teal" }} className="min-vh-100">
       <Header />
 
       <Main />

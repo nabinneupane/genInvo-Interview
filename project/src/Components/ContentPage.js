@@ -4,19 +4,19 @@ import { Container, Col, Row } from "react-bootstrap";
 const ContentPage = ({ input }) => {
   const { name, description, stargazers_count, open_issues_count } = input;
   const { login, avatar_url, node_id } = input.owner;
-  console.log(
-    "Name: ",
-    name,
-    " description: ",
-    description,
-    " starred: ",
-    stargazers_count,
-    " issue: ",
-    open_issues_count,
-    avatar_url,
-    " login: ",
-    login
-  );
+  //   console.log(
+  //     "Name: ",
+  //     name,
+  //     " description: ",
+  //     description,
+  //     " starred: ",
+  //     stargazers_count,
+  //     " issue: ",
+  //     open_issues_count,
+  //     avatar_url,
+  //     " login: ",
+  //     login
+  //   );
   return (
     <Container fluid={true} className="p-2 mb-4 border-bottom border-dark">
       <Row>

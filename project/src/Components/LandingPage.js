@@ -18,7 +18,7 @@ const LandingPage = ({ handleClick, flag }) => {
         <section className="d-flex justify-content-center">
           <button
             variant="primary"
-            class="btn btn-primary btn-lg"
+            className="btn btn-primary btn-lg"
             onClick={handleClick}
             disabled={flag}
           >
