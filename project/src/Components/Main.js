@@ -64,6 +64,12 @@ const Main = () => {
           Fetching more Items..... Have Patience
         </div>
       )}
+      {!stop && (
+        <div className="h4 text-center mb-4 p-3">
+          Error status code thrown 403 Limit exceed... Cannot fetch from this
+          point due to restriction .......
+        </div>
+      )}
     </Container>
   );
 };
