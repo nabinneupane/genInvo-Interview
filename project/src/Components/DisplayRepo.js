@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ContentPage from "./ContentPage";
+
 const DisplayRepo = ({ repo }) => {
+  var count = 0;
   return (
     <Container fluid={true} className="p-0 ">
       {typeof repo === "undefined" ? (
@@ -9,7 +11,7 @@ const DisplayRepo = ({ repo }) => {
           There are no more Repo to display
         </Row>
       ) : (
-        repo.map((value) => <ContentPage key={value.node_id} input={value} />)
+        repo.map((value) => <ContentPage key={count++} input={value} />)
       )}
     </Container>
   );

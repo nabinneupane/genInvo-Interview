@@ -17,13 +17,12 @@ const HandlePagination = (callback) => {
 
   function handleScroll() {
     if (
-      window.innerHeight + window.scrollY < document.body.offsetHeight ||
+      window.innerHeight + window.scrollY < document.body.offsetHeight &&
       isFetching
     )
       return;
 
     setIsFetching(true);
-    console.log("Fetch more  repositories!");
   }
   return [isFetching, setIsFetching];
 };
